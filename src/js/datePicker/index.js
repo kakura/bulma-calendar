@@ -414,7 +414,7 @@ export default class datePicker extends EventEmitter {
 			this._toggleNextButton();
 		}
 
-		this._ui.navigation.month.innerHTML = dateFns.format(this._visibleDate, 'MMMM', {
+		this._ui.navigation.month.innerHTML = dateFns.format(this._visibleDate, 'MM', {
 			locale: this.locale
 		});
 		this._ui.navigation.year.innerHTML = dateFns.format(this._visibleDate, 'YYYY', {
